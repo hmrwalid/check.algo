@@ -1,0 +1,19 @@
+ALGORITHM chek7
+VAR
+s : CHAR;
+numWord : INTEGER := 1;
+lengthSentence, numVowel : INTEGER := 0;
+BEGIN
+read(s);
+
+ WHILE (s <> ".") DO
+  lengthSentence := lengthSentence +1
+   IF (s = " ") THEN
+    numWord := numWord +1;
+    END_IF
+     IF (s = "A" OR  s = "a" OR s = "E" OR  s = "e" OR s = "U" OR  s = "u" OR s = "I" OR  s = "i" s = "O" OR  s = "o" s = "Y" OR  s = "y"  ) THEN
+        numVowel := numVowel +1 ;
+     END_IF
+ END_WHILE
+ write (lengthSentence, numWord, numVowel);
+END
